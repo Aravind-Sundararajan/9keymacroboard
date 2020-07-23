@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name tkm)(type Legacy)(uri "/home/sunny/Documents/keyboard libraries/kicad_lib_tmk-master/keyboard_parts.lib")(options "")(descr ""))
+)

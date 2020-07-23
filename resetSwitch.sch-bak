@@ -1,0 +1,79 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5750 3800 5800 3800
+$Comp
+L tkm:SW_PUSH SW?
+U 1 1 5E0D8514
+P 5450 3800
+AR Path="/5E0D8514" Ref="SW?"  Part="1" 
+AR Path="/5E0D4B77/5E0D8514" Ref="SW1"  Part="1" 
+F 0 "SW1" H 5450 4055 50  0000 C CNN
+F 1 "SW_PUSH" H 5450 3964 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 5450 3800 60  0001 C CNN
+F 3 "" H 5450 3800 60  0000 C CNN
+	1    5450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E0D851A
+P 5300 3450
+AR Path="/5E0D851A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0D4B77/5E0D851A" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 5300 3300 50  0001 C CNN
+F 1 "VCC" V 5318 3577 50  0000 L CNN
+F 2 "" H 5300 3450 50  0001 C CNN
+F 3 "" H 5300 3450 50  0001 C CNN
+	1    5300 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E0D8521
+P 5150 3800
+AR Path="/5E0D8521" Ref="#PWR?"  Part="1" 
+AR Path="/5E0D4B77/5E0D8521" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 5150 3550 50  0001 C CNN
+F 1 "GND" V 5155 3672 50  0000 R CNN
+F 2 "" H 5150 3800 50  0001 C CNN
+F 3 "" H 5150 3800 50  0001 C CNN
+	1    5150 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E0D8527
+P 5450 3450
+AR Path="/5E0D8527" Ref="R?"  Part="1" 
+AR Path="/5E0D4B77/5E0D8527" Ref="R3"  Part="1" 
+F 0 "R3" V 5243 3450 50  0000 C CNN
+F 1 "10k" V 5334 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 3450 50  0001 C CNN
+F 3 "~" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3450 5800 3800
+Connection ~ 5800 3800
+Wire Wire Line
+	5800 3800 6300 3800
+Text HLabel 6300 3800 2    50   Input ~ 0
+reset
+Wire Wire Line
+	5800 3450 5600 3450
+$EndSCHEMATC
